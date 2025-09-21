@@ -1,0 +1,268 @@
+:root {
+
+    --primary-color: #2c3e50;
+
+    --secondary-color: #3498db;
+
+    --accent-color: #a85151;
+
+    --text-light: #ecf0f1;
+
+    --bg-dark: #34495e;
+
+}
+/* ----------PORTFOLIO-------- */
+.container-portfolio{
+    position: relative;
+}
+
+.cover-image{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+
+}
+.home-box{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 100px;    
+    background: transparent;
+    backdrop-filter: blur(2px);
+}
+.home{
+    color: #ffffff;
+    max-width: 1100px;
+    font-size: 40px;
+}
+.h1-home{
+    font-family: sans-serif;
+}
+.span-im{
+    color: #e77676;
+}
+
+/* navigation */
+.navBarrr{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-design{
+
+    background: linear-gradient(86deg, #615e64 0%, #0505055e 100%);
+
+    color: white;
+
+    padding: 20px 0;
+
+    text-align: center;
+}
+
+.profile-img {
+
+    width: 200px;
+     
+    border-radius: 20px;
+
+    border: 5px solid white;
+
+    margin-bottom: 30px;
+
+    object-fit: cover;
+
+}
+
+.section {
+
+    padding: 200px 0;
+
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    color: var(--primary-color);
+
+}
+
+.skill-tag {
+
+    background-color: var(--secondary-color);
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    margin: 5px;
+
+    display: inline-block;
+
+}
+
+.project-card {
+
+    transition: transform 0.3s ease;
+
+    border: none;
+
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    margin-bottom: 30px;
+
+}
+
+.project-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+
+}
+
+
+/* --------ABOUT------ */
+.image-paragraph-container{
+    display: flex;
+    justify-content: space-evenly;
+
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+.paragrah-about{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+#about{
+    background-color: #d3cba8;
+    font-size: 20px;
+
+}
+.aboutSelf{
+    max-width: 400px;
+}
+
+#boxAbout{
+    color: #935dd1;
+    font-size: 50px;
+}
+
+.aboutImage{
+    width: 100%;
+    background-image: url(./image/imageko.jpeg);
+    border-radius: 20px;
+    border: 10px solid rgb(51, 43, 43);
+}
+.content{
+    display: flex;
+    gap: 10px;
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* ----------PROJECT-------- */
+#projects{
+    background-color:#21162e;
+}
+.projects-section {
+    background: linear-gradient(86deg, #cf6066 0%, #691d2e 100%);
+    padding: 50px 10px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-card p {
+    margin: 10px 0;
+}
+
+.S_status {
+    font-weight: bold;
+    color: #555;
+}
+
+/* ----------CONTACT-------- */
+#contact{
+    background-color: #d3cba8;
+}
+
+
+
+
+
+@media (max-width: 1100px){
+    .image-paragraph-container{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    }
+    .paragrah-about{
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .paragrah-about p{  
+        font-size: 20px;
+    }
+        p{
+      
+        font-size: 16px;
+    }
+    .section-container{
+       display: grid;
+        grid-column-start: 1fr;
+        justify-content: center;
+    }
+}
+@media (max-width: 616px ){
+        .home-box{
+            padding: 0 20px;
+        
+        }
+        .home{
+            font-size: 10px;
+        }
+}
+@media (max-width: 412px){
+     .Paragraph-box p{
+        margin: 20px;
+    }
+    p{
+        font-size: 10px;
+    }
+
+}
