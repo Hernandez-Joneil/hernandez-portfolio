@@ -21,9 +21,9 @@ class PortfolioController extends Controller
 
             'title' => 'Full Stack Web Developer',
 
-            'email' => 'john.doe@example.com',
+            'email' => 'jonelhernandez@example.com',
 
-            'phone' => '+639074562134',
+            'phone' => '+693043435072',
 
             'location' => 'PH, Manila',
 
@@ -71,22 +71,6 @@ class PortfolioController extends Controller
                 ]
             
                 ],
-
-            // 'about' => [// Experience data
-            //     [
-            //         'work' => 'wala pa',
-            //         'jowa' => 'wala pa',
-            //         'maring_palad' => 'many',
-            //         'year' => '2023'
-            //     ],
-            //     [
-            //         'work' => 'meron na',
-            //         'jowa' => 'meron na ',
-            //         'maring_palad' => 'Never',
-            //         'year' => '2025'
-            //     ]
-
-            // ], 
 
             'education' => [ // Education data
                 [
